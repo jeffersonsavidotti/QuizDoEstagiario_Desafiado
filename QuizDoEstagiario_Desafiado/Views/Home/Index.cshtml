@@ -1,8 +1,38 @@
-﻿<div class="container mt-4">
+﻿<style>
+    body {
+        background-image: url('quiz.png');
+        background-size: cover;
+    }
+
+    .quiz-container {
+        max-width: auto;
+        margin: auto;
+        padding: 20px;
+        background: linear-gradient(to bottom, #3498db, #ffffff);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        color: #333;
+        font-size: 2.2em;
+    }
+
+    .card {
+        background-color: transparent;
+        border: none;
+        transition: all 1.3s ease;
+    }
+
+    .card-body {
+        height: auto;
+        width: auto;
+    }
+</style>
+
+<div class="quiz-container mt-4">
     <h2>@ViewData["Title"]</h2>
 
     @if (ViewBag.Finished != null && ViewBag.Finished)
     {
+        <!-- Se o quiz estiver concluído -->
         <h4 class="mt-3">Parabéns! Você concluiu o quiz!</h4>
         <p>Sua pontuação: @ViewBag.Score de @ViewBag.Questions.Count</p>
 
@@ -33,6 +63,7 @@
     }
     else
     {
+        <!-- Se o quiz ainda não estiver concluído -->
         <form method="post" action="">
             <p class="mt-3">@ViewBag.Pergunta</p>
 
@@ -50,10 +81,6 @@
         </form>
     }
 </div>
-
-
-
-
 
 
 @* E se na minha empresa não for permitido o uso de cookies, e não podemos pagar por um banco de dados.. qual seria a solução? *@

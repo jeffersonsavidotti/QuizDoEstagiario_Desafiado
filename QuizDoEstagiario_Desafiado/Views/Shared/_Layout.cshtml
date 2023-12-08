@@ -3,17 +3,39 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - QuizDoEstagiario_Desafiado</title>
+    <title>@ViewData["Title"] - Quiz Do Estagiario - Desafiado</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-rwgt+3DAP/yFz9+6ACePFeFveRf3vZ3ptYogD8t8wu9/2RUuLh2PqO6h4CKtzx6p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-rwgt+3DAP/yFz9+6ACePFeFveRf3vZ3ptYogD8t8wu9/2RUuLh2PqO6h4CKtzx6p" crossorigin="anonymous" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/QuizDoEstagiario_Desafiado.styles.css" asp-append-version="true" />
+
+    <style>
+
+        footer {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+            color: #000; /* Cor preta */
+            border: 1px solid #fff; /* Contorno branco */
+            background-color: #f8f9fa; /* Cor de fundo */
+        }
+
+        .footer a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .footer a:hover {
+                color: #333;
+            }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">QuizDoEstagiario_Desafiado</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Quiz Do Estagiario - Desafiado</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,13 +43,14 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -36,9 +59,10 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - QuizDoEstagiario_Desafiado - Jefferson Savidotti <a href="https://github.com/jeffersonsavidotti">Github</a>
+            &copy; 2023 - Quiz Do Estagiario - Desafiado - Jefferson Savidotti <a href="https://github.com/jeffersonsavidotti">Github</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

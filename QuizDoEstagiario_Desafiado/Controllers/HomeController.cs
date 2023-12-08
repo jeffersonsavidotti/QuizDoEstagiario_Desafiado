@@ -16,32 +16,32 @@ public class HomeController : Controller
         {
             new QuizModel
             {
-                Pergunta = "O que é Git?",
-                Respostas = new string[] { "Sistema de Controle de Versão", "Banco de Dados", "Linguagem de Programação" }
+                Pergunta = "Qual destas é uma tecnologia de Front-end?",
+                Respostas = new string[] { "React", "C#", "PHP", "SQL" }
             },
             new QuizModel
             {
-                Pergunta = "Qual comando SQL é usado para deletar uma linha do banco de dados?",
-                Respostas = new string[] { "DELETE FROM", "REMOVE", "DROP" }
+                Pergunta = "Qual destas é uma tecnologia de Back-end?",
+                Respostas = new string[] { "Golang", "CSS", "HTML", "Angular" }
             },
             new QuizModel
             {
-                Pergunta = "O que é um método estático em programação?",
-                Respostas = new string[] { "Um método que pertence à classe, não à instância", "Um método que só pode ser chamado de dentro de outro método", "Um método que não aceita parâmetros" }
+                Pergunta = "Como deletar apenas uma linha do DB?",
+                Respostas = new string[] { "DELETE FROM", "UPDATE", "DELETE", "DROP" }
+            },
+            new QuizModel
+            {
+                Pergunta = "Qual deste não é uma estrutura de repetição?",
+                Respostas = new string[] { "else", "while", "for", "do while" }
             },
             new QuizModel
             {
                 Pergunta = "Qual é a diferença entre 'const' e 'readonly' em C#?",
-                Respostas = new string[] { "const é resolvido em tempo de compilação, readonly em tempo de execução", "const pode ser usado apenas para valores primitivos, readonly para qualquer tipo", "const é sempre estático, readonly pode ser de instância" }
+                Respostas = new string[] { "const é resolvido em tempo de compilação e readonly em tempo de execução", "const pode ser usado apenas para valores primitivos e readonly para qualquer tipo", "const é sempre estático e readonly pode ser de instância", "const é sempre uma variavel e readonly é um objeto" }
             },
-            new QuizModel
-            {
-                Pergunta = "O que é uma exceção em programação?",
-                Respostas = new string[] { "Um evento anormal que ocorre durante a execução de um programa", "Um tipo de variável em C#", "Um método especial que lida com erros em tempo de compilação" }
-            },
-            // Adicione mais perguntas conforme necessário
         };
     }
+
 
     public IActionResult Index()
     {
