@@ -1,0 +1,59 @@
+﻿<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (ViewBag.Finished != null && ViewBag.Finished)
+    {
+        <h4 class="mt-3">Parabéns! Você concluiu o quiz!</h4>
+        <p>Sua pontuação: @ViewBag.Score de @ViewBag.Questions.Count</p>
+
+        <h5 class="mt-3">Respostas:</h5>
+        @for (int i = 0; i < ViewBag.Questions.Count; i++)
+        {
+            var question = ViewBag.Questions[i];
+            var userAnswer = ViewBag.UserAnswers[i];
+            var correctAnswer = ViewBag.CorrectAnswers[i];
+            var isCorrect = (userAnswer == correctAnswer);
+
+            <div class="card mt-3" style="background-color: @(isCorrect ? "#d3f7cf" : "#f7c3c3")">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Pergunta @(i + 1):</h6>
+                    <p class="card-text">
+                        @question.Pergunta<br />
+                        Sua resposta: <strong>@userAnswer</strong><br />
+                        Resposta correta: <strong>@correctAnswer</strong>
+                    </p>
+                </div>
+            </div>
+        }
+
+        <!-- Botão para reiniciar o quiz -->
+        <form method="post" action="@Url.Action("ResetQuiz", "Home")">
+            <button type="submit" class="btn btn-secondary mt-3">Reiniciar o Quiz</button>
+        </form>
+    }
+    else
+    {
+        <form method="post" action="">
+            <p class="mt-3">@ViewBag.Pergunta</p>
+
+            @foreach (var resposta in ViewBag.Respostas)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="resposta" id="@("resposta" + resposta)" value="@resposta">
+                    <label class="form-check-label" for="@("resposta" + resposta)">
+                        @resposta
+                    </label>
+                </div>
+            }
+
+            <button type="submit" class="btn btn-primary mt-3">Responder</button>
+        </form>
+    }
+</div>
+
+
+
+
+
+
+@* E se na minha empresa não for permitido o uso de cookies, e não podemos pagar por um banco de dados.. qual seria a solução? *@
