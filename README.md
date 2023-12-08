@@ -1,6 +1,6 @@
 # QuizDoEstagiario_Desafiado
 
 <p align="center">
-    <img windth="470" src="https://imgur.com/aZdJrPh">
+    <img windth="470" heigth="300" src="QuizDoEstagiario_Desafiado/wwwroot/README/Desafio-Quiz.gif">
 </p>
 
