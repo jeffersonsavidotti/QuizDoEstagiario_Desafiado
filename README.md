@@ -3,7 +3,7 @@
 <p align="center">
     <img windth="470" heigth="300" src="QuizDoEstagiario_Desafiado/wwwroot/README/Desafio-Quiz.gif">
 </p>
-### Quiz do Estagiário Desafiado 🚀
+## Quiz do Estagiário Desafiado 🚀
 
 Bem-vindo ao Quiz do Estagiário Desafiado! 🎉 Prepare-se para testar seus conhecimentos de programação de uma forma divertida e desafiadora. Este quiz foi projetado para entreter e desafiar até mesmo os desenvolvedores mais experientes. Vamos lá!
 
