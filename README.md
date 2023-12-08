@@ -22,19 +22,19 @@ Bem-vindo ao Quiz do Estagiário Desafiado! 🎉 Prepare-se para testar seus con
 
    ```bash
    git clone https://github.com/jeffersonsavidotti/QuizDoEstagiario_Desafiado
-Abra o terminal e navegue até o diretório do projeto.
+2. Abra o terminal e navegue até o diretório do projeto.
 
     ```bash
     cd QuizDoEstagiario_Desafiado
-Execute o projeto usando o comando:
+3. Execute o projeto usando o comando:
 
     ```bash
     dotnet run
-Abra seu navegador e vá para:
+4. Abra seu navegador e vá para:
 
     ```bash
     https://localhost:7090
-Responda às perguntas do quiz e veja como você se sai!
+5. Responda às perguntas do quiz e veja como você se sai!
 
 ## Recursos do Quiz 🌟
 Perguntas emocionantes e descontraídas sobre programação.
